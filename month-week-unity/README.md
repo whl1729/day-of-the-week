@@ -3,21 +3,19 @@
 Calculate the days that are both Monday and the first day of a month. 
 
 For simplicity sake, let's refer to these days as **Month-Week-Unity days**.
-So why do we care about Month-Week-Unity days?
+So why do we care about them?
 
 Because they're both **interesting** and **useful**.
 
-On the one hand, there are many interesting statements hidden behind them:
-
-1. There are 1 to 3 Month-Week-Unity days every year.
+On the one hand, there are many interesting statements hidden behind them. For example, there are always 1 to 3 Month-Week-Unity days every year.
 
 On the other hand, once you know a Month-Week-Unity day, it's easy for you to know what day of the week other days in the same month are. All you need to do is calculating its remainder when divided by 7.
 
 For example, 2023-05-01 is Monday, so 2023-05-08 is also Monday because `8 % 7 = 1`, and 2023-05-23 is Tuesday because `23 % 7 = 2`.
 
-## Getting Started
+You can find out all Month-Week-Unity days between 2020-01-01 and 2099-12-30 in [this document][1].
 
-### Requirements
+## Requirements
 
 - Python 3
 
@@ -82,3 +80,5 @@ optional arguments:
   -q, --quiet           show only the number of Month-Week-Unity days in quiet mode
   -n NUM, --num NUM     number of day. The end year will be ignored if num is provided
 ```
+
+  [1]: ./mwu_2020_2099.txt
